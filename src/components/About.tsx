@@ -1,6 +1,6 @@
 "use client";
 
-import { useColor } from "@/context/ColorContext";
+import { useColor } from "../context/ColorContext";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "./Layout/Header";

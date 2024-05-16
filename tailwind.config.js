@@ -7,6 +7,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    {
+      pattern: /(from|via|to|border|bg|text)-(.*)-(\d{1}0{1,2})/,
+      variants: ["hover", "active", "focus", "visited"],
+    },
+  ],
   prefix: "",
   theme: {
     container: {

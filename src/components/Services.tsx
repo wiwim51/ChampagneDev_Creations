@@ -1,8 +1,14 @@
+import { useColor } from "../context/ColorContext";
+
 export default function Services() {
+  const { currentColor } = useColor();
+
   return (
     <section id="section-1" className="min-h-screen pt-40">
-      <h1 className="flex flex-col items-center bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 bg-clip-text text-5xl text-transparent">
-        Mes Services
+      <h1
+        className={`flex flex-col items-center text-5xl text-transparent text-${currentColor}-400 bg-clip-text`}
+      >
+        A Propos de moi
       </h1>
     </section>
   );

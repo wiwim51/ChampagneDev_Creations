@@ -1,10 +1,8 @@
 import { useColor } from "@/context/ColorContext";
-import React from "react";
 import { Button } from "./button";
 
 interface ColorButtonProps {
   color: string;
-  children: React.ReactNode;
 }
 
 const ColorButton: React.FC<ColorButtonProps> = ({ color }) => {
@@ -16,7 +14,7 @@ const ColorButton: React.FC<ColorButtonProps> = ({ color }) => {
 
   return (
     <Button
-      className={`bg-${color}-400 rounded-full w-8 h-8`}
+      className={`bg-${color}-400 rounded-full w-8 h-8 hover:bg-${color}-700`}
       onClick={handleClick}
     ></Button>
   );

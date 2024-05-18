@@ -1,8 +1,8 @@
 "use client";
 
-import { useColor } from "../context/ColorContext";
 import Image from "next/image";
 import Link from "next/link";
+import { useColor } from "../context/ColorContext";
 import { Header } from "./Layout/Header";
 import ColorButton from "./ui/ColorButton";
 
@@ -21,14 +21,15 @@ export default function About() {
         </p>
       </div>
       <div className="pb-20">
-        <h1 className="flex flex-col items-center p-6 text-5xl leading-normal text-center">
-          Hello ! Je suis Jordane
-          <br />
-          un <b className={`text-${currentColor}-400`}>
-            développeur créatif
+        <h1 className="flex flex-col items-center p-6 text-5xl font-bold leading-normal text-center">
+          Hey✌️ ! Je suis Jordane
+          <b className={`text-${currentColor}-400`}>
+            Développeur Full-Stack
           </b>{" "}
           dans la régions{" "}
-          <b className={`text-${currentColor}-400`}>Champagne-Ardennes</b>
+          <b className={`text-${currentColor}-400 font-bold`}>
+            Champagne-Ardennes
+          </b>
         </h1>
       </div>
 
@@ -53,11 +54,10 @@ export default function About() {
         </Link>
       </div>
       <div className="flex items-center justify-center gap-20 p-20 ">
-        <ColorButton color={"emerald"}>green</ColorButton>
-        <ColorButton color={"red"}>red</ColorButton>
-        <ColorButton color={"sky"}>blue</ColorButton>
+        <ColorButton color={"emerald"}></ColorButton>
+        <ColorButton color={"red"}></ColorButton>
+        <ColorButton color={"sky"}></ColorButton>
       </div>
-      <div className="flex flex-row justify-center gap-4"></div>
     </section>
   );
 }

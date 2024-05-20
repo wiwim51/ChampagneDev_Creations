@@ -14,7 +14,7 @@ interface ColorContextType {
 const ColorContext = createContext<ColorContextType | undefined>(undefined);
 
 export function ColorProvider({ children }: ColorProviderProps) {
-  const [currentColor, setCurrentColor] = useState<string>("red");
+  const [currentColor, setCurrentColor] = useState<string>("sky");
 
   const changeColor = (newColor: string) => {
     setCurrentColor(newColor);

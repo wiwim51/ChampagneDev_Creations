@@ -17,7 +17,6 @@ export default function Home() {
         <Contact />
         <BackToTop />
       </main>
-      ;
     </ColorProvider>
   );
 }

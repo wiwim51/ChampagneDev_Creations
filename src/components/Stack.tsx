@@ -38,19 +38,45 @@ export default function Works() {
           </TabsTrigger>
         </TabsList>
         <TabsContent className="w-[800px]" value="frontend">
-          Je suis dans le frontend
+          <ul>
+            <li>NextJs</li>
+            <li>React</li>
+            <li>Typescript</li>
+            <li>Tailwind</li>
+            <li>Css / SaSS</li>
+          </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="backend">
-          Je suis dans le backend
+          <ul>
+            <li>NextJs</li>
+            <li>NodeJs</li>
+            <li>AdonisJs</li>
+            <li>Express</li>
+          </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="sgdb">
-          Je suis dans le sgdb
+          <ul>
+            <li>Prisma</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="deployement">
-          Je suis dans le deployement
+          <ul>
+            <li>Northflank</li>
+            <li>Heroku</li>
+            <li>Aws</li>
+            <li>Vercel</li>
+          </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="utiles">
-          Je suis dans le utiles
+          <ul>
+            <li>Shadcn/UI</li>
+            <li>Lucide Icons</li>
+            <li>Material UI</li>
+            <li>React UI</li>
+          </ul>
         </TabsContent>
       </Tabs>
     </section>

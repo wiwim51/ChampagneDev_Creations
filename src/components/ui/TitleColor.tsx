@@ -10,7 +10,7 @@ export const TitleColor = (props: TitleColorProps) => {
 
   return (
     <h1
-      className={`flex flex-col items-center text-5xl text-${currentColor}-400`}
+      className={`flex flex-col items-center text-5xl text-${currentColor}-400 font-bold`}
     >
       {props.children}
     </h1>

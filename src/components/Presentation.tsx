@@ -12,7 +12,7 @@ export default function Presentation() {
   return (
     <section
       // eslint-disable-next-line tailwindcss/classnames-order
-      className={`relative bg-gradient-to-tr from-white via-${currentColor}-700 to-black min-h-screen w-full`}
+      className={`relative bg-gradient-to-tr from-black via-${currentColor}-700 to-black min-h-screen w-full`}
     >
       <Header />
       <div className="flex justify-center pt-64 pb-14">

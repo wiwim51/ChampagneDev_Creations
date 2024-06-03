@@ -9,7 +9,8 @@ module.exports = {
   ],
   safelist: [
     {
-      pattern: /(text|via|from|to|bg|border)-(red|emerald|sky)-(400|700|900)/,
+      pattern:
+        /(text|via|from|to|bg|border|shadow)-(red|emerald|sky)-(400|700|900)/,
       variants: ["hover", "active", "focus", "visited"],
     },
   ],

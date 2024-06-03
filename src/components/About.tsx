@@ -34,17 +34,17 @@ export default function About() {
       <div className="flex items-center gap-60">
         <ul className="flex flex-col gap-24 text-2xl font-bold">
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black p-2`}
           >
             E-commerce
           </li>
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
           >
             Site Vitrine
           </li>
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
           >
             Saas
           </li>
@@ -57,17 +57,17 @@ export default function About() {
         />
         <ul className="flex flex-col gap-24 text-2xl font-bold">
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
           >
             App Mobile
           </li>
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
           >
             Logiciel
           </li>
           <li
-            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 p-2`}
+            className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
           >
             API
           </li>

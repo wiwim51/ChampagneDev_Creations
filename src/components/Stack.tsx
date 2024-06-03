@@ -33,49 +33,106 @@ export default function Works() {
           <TabsTrigger className="w-[800px]" value="deployement">
             Déployement
           </TabsTrigger>
-          <TabsTrigger className="w-[800px]" value="utiles">
-            Utiles
-          </TabsTrigger>
         </TabsList>
         <TabsContent className="w-[800px]" value="frontend">
-          <ul>
-            <li>NextJs</li>
-            <li>React</li>
-            <li>Typescript</li>
-            <li>Tailwind</li>
-            <li>Css / SaSS</li>
+          <ul className="flex gap-2 ">
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              NextJs
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              React
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Typescript
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Tailwind
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Css / SaSS
+            </li>
           </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="backend">
-          <ul>
-            <li>NextJs</li>
-            <li>NodeJs</li>
-            <li>AdonisJs</li>
-            <li>Express</li>
+          <ul className="flex gap-2">
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              NextJs
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              NodeJs
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              AdonisJs
+            </li>
           </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="sgdb">
-          <ul>
-            <li>Prisma</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
+          <ul className="flex gap-2">
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Prisma
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              MySQL
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              PostgreSQL
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              MongoDB
+            </li>
           </ul>
         </TabsContent>
         <TabsContent className="w-[800px]" value="deployement">
-          <ul>
-            <li>Northflank</li>
-            <li>Heroku</li>
-            <li>Aws</li>
-            <li>Vercel</li>
-          </ul>
-        </TabsContent>
-        <TabsContent className="w-[800px]" value="utiles">
-          <ul>
-            <li>Shadcn/UI</li>
-            <li>Lucide Icons</li>
-            <li>Material UI</li>
-            <li>React UI</li>
+          <ul className="flex gap-2">
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Northflank
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Heroku
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Vercel
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Docker
+            </li>
+            <li
+              className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+            >
+              Autres
+            </li>
           </ul>
         </TabsContent>
       </Tabs>

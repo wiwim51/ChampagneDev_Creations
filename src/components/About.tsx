@@ -15,9 +15,9 @@ export default function About() {
     >
       <div className="relative flex items-center justify-center w-1/2 gap-20 p-20">
         <p className="absolute font-bold left-36">Essaye moi ! 👉</p>
-        <ColorButton color={"emerald"}></ColorButton>
-        <ColorButton color={"red"}></ColorButton>
-        <ColorButton color={"sky"}></ColorButton>
+        <ColorButton color={"teal"}></ColorButton>
+        <ColorButton color={"rose"}></ColorButton>
+        <ColorButton color={"indigo"}></ColorButton>
       </div>
       <TitleColor children="A propos de moi" />
       <p className="w-1/2 text-2xl leading-10 tracking-wider text-center pt-44 pb-44">

@@ -11,7 +11,7 @@ module.exports = {
     {
       pattern:
         /(text|via|from|to|bg|border|shadow)-(rose|teal|indigo)-(400|700|900)/,
-      variants: ["hover", "active", "focus", "visited"],
+      variants: ["hover", "active", "focus", "visited", "focus-visible"],
     },
   ],
   prefix: "",

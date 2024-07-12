@@ -17,7 +17,7 @@ export default function Presentation() {
       <Header />
       <div className="flex justify-center pt-64 pb-14">
         <p className="px-4 py-1 text-center border-2 border-white border-solid rounded-3xl">
-          WELCOME TO MY WORLD
+          WELCOME TO MY WORLD ! 🌍
         </p>
       </div>
       <div className="pb-20">
@@ -37,19 +37,19 @@ export default function Presentation() {
         <div className="flex items-center justify-around">
           <Link
             href="#section-3"
-            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex`}
+            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
             <Instagram width={75} height={75} />
           </Link>
           <Link
             href="#section-3"
-            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex`}
+            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
             <Github width={75} height={75} />
           </Link>
           <Link
             href="#section-3"
-            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex`}
+            className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
             <Image src="/images/x.png" alt="X" width={75} height={75} />
           </Link>

@@ -11,7 +11,7 @@ export function Projets() {
       <p className="w-full text-2xl leading-10 tracking-wider text-center pt-44 pb-44">
         Vous pouvez retrouver ici{" "}
         <span className={`text-${currentColor}-400`}>
-          toutes mes réalisations
+          toutes mes réalisations ! 💻
         </span>
       </p>
       <HoverEffect items={projects} />
@@ -26,15 +26,15 @@ export const projects = [
     link: "https://lemmair.fr/",
   },
   {
-    title: "Lomie",
-    description:
-      "Une application de création de capsule temporelle digital. (En cours de développement)",
-    link: "https://netflix.com",
-  },
-  {
     title: "CorgTweet",
     description:
       "une copie de twitter avec un design inspiré du welsh corgi pembroke.",
+    link: "https://corgi-tweet.vercel.app/",
+  },
+  {
+    title: "Lomie",
+    description:
+      "Une application de création de capsule temporelle digital. (En cours de développement)",
     link: "https://google.com",
   },
 ];

@@ -8,7 +8,7 @@ export default async function handler(
 ) {
   if (req.method === "POST") {
     try {
-      const { email, message } = req.body;
+      const { email, message, objet, nom, prenom } = req.body;
 
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
@@ -22,8 +22,10 @@ export default async function handler(
 
       await transporter.sendMail({
         from: email,
-        to: "jordane.lemmair@gmail.com",
-        subject: "Nouveau message de contact !",
+        to: "contact.pro@champagnedev-creations.fr",
+        lastname: nom,
+        firstname: prenom,
+        subject: objet,
         text: message,
         html: `<p>${message}</p>`,
       });

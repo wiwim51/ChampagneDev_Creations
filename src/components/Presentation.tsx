@@ -1,7 +1,6 @@
 "use client";
 
-import { Github, Instagram } from "lucide-react";
-import Image from "next/image";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useColor } from "../context/ColorContext";
 import { Header } from "./Layout/Header";
@@ -36,22 +35,22 @@ export default function Presentation() {
       <div className="absolute bottom-0 w-full mx-auto transform translate-y-1/2">
         <div className="flex items-center justify-around">
           <Link
-            href="#section-3"
+            href="https://www.instagram.com/champagnedev_creations/"
             className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
             <Instagram width={75} height={75} />
           </Link>
           <Link
-            href="#section-3"
+            href="https://github.com/wiwim51"
             className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
             <Github width={75} height={75} />
           </Link>
           <Link
-            href="#section-3"
+            href="https://www.linkedin.com/in/jordane-lemmer-12290819b/"
             className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md w-28 h-28 items-center flex hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
           >
-            <Image src="/images/x.png" alt="X" width={75} height={75} />
+            <Linkedin width={75} height={75} />
           </Link>
         </div>
       </div>

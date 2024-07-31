@@ -75,6 +75,9 @@ export default function Contact() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          nom: data.nom,
+          prenom: data.prenom,
+          objet: data.objet,
           email: data.email,
           message: data.message,
         }),

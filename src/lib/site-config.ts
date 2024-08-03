@@ -1,4 +1,5 @@
 export const SiteConfig = {
-    title: 'Lemmer Jordane',
-    description: 'My Portfolio.',
+  title: "ChampagneDev-Creations",
+  description:
+    "champagnedev-creations est un site de services de développement web et mobile",
 } as const;

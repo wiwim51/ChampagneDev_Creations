@@ -1,47 +1,27 @@
-require("dotenv").config();
-import { NextApiRequest, NextApiResponse } from "next";
-const nodemailer = require("nodemailer");
+import { EmailTemplate } from "@/components/email-template";
+import type { NextApiRequest, NextApiResponse } from "next";
+import { Resend } from "resend";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method === "POST") {
-    try {
-      const { email, message, objet, nom, prenom } = req.body;
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-      const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
-        secure: process.env.SMTP_SECURE,
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-      });
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const { firstname, lastname, email, subject, message } = req.body;
+  const { data, error } = await resend.emails.send({
+    from: process.env.MY_EMAIL ?? "",
+    to: [email],
+    subject: subject,
+    react: EmailTemplate({
+      firstName: firstname,
+      lastName: lastname,
+      email: email,
+      subject: subject,
+      message: message,
+    }),
+  });
 
-      await transporter.sendMail({
-        from: email,
-        to: "contact.pro@champagnedev-creations.fr",
-        lastname: nom,
-        firstname: prenom,
-        subject: objet,
-        text: message,
-        html: `<p>${message}</p>`,
-      });
-
-      res
-        .status(200)
-        .json({ success: true, message: "Votre message a bien été envoyé !" });
-    } catch (error) {
-      console.error("Error sending email:", error);
-      res.status(500).json({
-        success: false,
-        message:
-          "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
-      });
-    }
-  } else {
-    res.status(405).json({ success: false, message: "erreur serveur" });
+  if (error) {
+    return res.status(400).json({ error });
   }
-}
+
+  res.status(200).json({ data });
+};

@@ -30,7 +30,7 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Votre Email doit être valide.",
   }),
-  objet: z.string().min(5).max(50, {
+  subject: z.string().min(5).max(50, {
     message: "Votre Objet doit contenir au moins 5 caractères et maximum 50.",
   }),
   message: z.string().min(20).max(500, {
@@ -43,7 +43,7 @@ type ContactFormData = {
   nom: string;
   prenom: string;
   email: string;
-  objet: string;
+  subject: string;
   message: string;
 };
 
@@ -54,7 +54,7 @@ export default function Contact() {
       nom: "",
       prenom: "",
       email: "",
-      objet: "",
+      subject: "",
       message: "",
     },
   });
@@ -77,7 +77,7 @@ export default function Contact() {
         body: JSON.stringify({
           nom: data.nom,
           prenom: data.prenom,
-          objet: data.objet,
+          subject: data.subject,
           email: data.email,
           message: data.message,
         }),
@@ -181,7 +181,7 @@ export default function Contact() {
             />
             <FormField
               control={form.control}
-              name="objet"
+              name="subject"
               render={({ field }) => (
                 <FormItem className="md:col-span-2">
                   <FormControl>

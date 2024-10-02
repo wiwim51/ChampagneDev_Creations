@@ -23,7 +23,7 @@ export default function Presentation() {
         <h1 className="flex flex-col items-center p-6 text-5xl font-bold leading-normal text-center">
           Hey✌️ ! Je suis Jordane
           <b className={`text-${currentColor}-400`}>
-            Développeur Full-Stack
+            Développeur Freelance
           </b>{" "}
           dans la régions{" "}
           <b className={`text-${currentColor}-400 font-bold`}>

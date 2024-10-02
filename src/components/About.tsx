@@ -27,9 +27,10 @@ export default function About() {
         </span>{" "}
         je peu vous aidez dans la conception et l’amélioration de votre projet.
         Je m’occupe du
-        <span className={`text-${currentColor}-400`}> développement</span> et du
+        <span className={`text-${currentColor}-400`}> développement</span> et/ou
+        du
         <span className={`text-${currentColor}-400`}> Design</span> de votre
-        application web ou mobile. 🚀
+        application web / mobile. 🚀
       </p>
       <div className="flex items-center gap-60">
         <ul className="flex flex-col gap-24 text-2xl font-bold">

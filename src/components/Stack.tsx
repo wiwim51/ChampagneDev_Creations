@@ -16,7 +16,7 @@ const slugsFront = [
   "figma",
 ];
 
-const slugsBack = ["nextdotjs", "nodedotjs", "adonisjs"];
+const slugsBack = ["nextdotjs", "nodedotjs", "adonisjs", "express"];
 
 const slugsSgdb = ["mongodb", "postgresql", "mysql", "prisma", "planetscale"];
 
@@ -40,7 +40,7 @@ export default function Works() {
     >
       <TitleColor children="Ma Stack" />
       <p className="w-full text-2xl leading-10 tracking-wider text-center pt-44 pb-44">
-        la stack que j’utilise{" "}
+        la stack et outils que j’utilise{" "}
         <span className={`text-${currentColor}-400`}>
           pour réaliser vos idées ! 💡
         </span>
@@ -136,6 +136,11 @@ export default function Works() {
                   className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
                 >
                   NodeJs
+                </li>
+                <li
+                  className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}
+                >
+                  Express
                 </li>
                 <li
                   className={`flex justify-center border-solid rounded-md border-2 border-${currentColor}-400 hover:bg-gradient-to-tr from-black via-${currentColor}-700 p-2`}

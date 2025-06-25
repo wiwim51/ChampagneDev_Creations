@@ -109,8 +109,8 @@ export default function Contact() {
     <section id="section-4" className="w-1/2 min-h-screen pt-40">
       <TitleColor children="Prenez contact avec moi !" />
       <p className="w-full text-2xl leading-10 tracking-wider text-center pt-44 pb-44">
-        si vous souhaitez{" "}
-        <span className={`text-${currentColor}-400`}>travailler avec moi</span>{" "}
+        Si vous souhaitez{" "}
+        <span className={`text-${currentColor}-400`}>travailler avec moi,</span>{" "}
         c'est ici ! 📩
       </p>
       <div
@@ -185,7 +185,7 @@ export default function Contact() {
               render={({ field }) => (
                 <FormItem className="md:col-span-2">
                   <FormControl>
-                    <Input required placeholder="objet *" {...field} />
+                    <Input required placeholder="Objet *" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -209,7 +209,7 @@ export default function Contact() {
               )}
             />
             <p className="col-span-1 text-grey">
-              (*) ⚠️ veuillez remplir tout les champs ⚠️
+              (*) ⚠️ veuillez remplir tous les champs ⚠️
             </p>
             <div className="flex justify-center col-span-1 md:col-span-2">
               <Toaster position="bottom-right" richColors />

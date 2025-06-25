@@ -74,7 +74,7 @@ export function Header() {
               href="#section-4"
               className={`px-4 py-2 text-sm font-medium border-2 border-${currentColor}-400 border-solid rounded-md hover:bg-gradient-to-tr from-black via-${currentColor}-700 to-black`}
             >
-              Contacter moi
+              Contactez-moi
             </Link>
 
             {/* <ThemeToggle /> */}

@@ -25,7 +25,7 @@ export default function Presentation() {
           <b className={`text-${currentColor}-400`}>
             Développeur Freelance
           </b>{" "}
-          dans la régions{" "}
+          dans la région{" "}
           <b className={`text-${currentColor}-400 font-bold`}>
             Champagne-Ardennes
           </b>

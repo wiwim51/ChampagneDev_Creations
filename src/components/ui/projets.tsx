@@ -22,19 +22,19 @@ export const projects = [
   {
     title: "Lemm'air",
     description:
-      "entreprise spécialisée dans la maintenance et l'installation de climatisation.",
+      "Entreprise spécialisée dans la maintenance et l'installation de climatisation.",
     link: "https://lemmair.fr/",
   },
   {
     title: "CorgTweet",
     description:
-      "une copie de twitter avec un design inspiré du welsh corgi pembroke.",
+      "Une copie de twitter avec un design inspiré du welsh corgi pembroke.",
     link: "https://corgi-tweet.vercel.app/",
   },
   {
     title: "Lomie",
     description:
-      "Une application de création de capsule temporelle digital. (En cours de développement)",
+      "Une application de création de capsule temporelle digitale. (En cours de développement)",
     link: "https://google.com",
   },
 ];

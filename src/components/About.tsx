@@ -14,7 +14,7 @@ export default function About() {
       className="flex flex-col items-center min-h-screen pt-40"
     >
       <div className="relative flex items-center justify-center w-1/2 gap-20 p-20">
-        <p className="absolute font-bold left-36">Essaye moi ! 👉</p>
+        <p className="absolute font-bold left-36">Essayez-moi ! 👉</p>
         <ColorButton color={"teal"}></ColorButton>
         <ColorButton color={"rose"}></ColorButton>
         <ColorButton color={"indigo"}></ColorButton>
@@ -25,7 +25,7 @@ export default function About() {
         <span className={`text-${currentColor}-400`}>
           développeur Freelance
         </span>{" "}
-        je peu vous aidez dans la conception et l’amélioration de votre projet.
+        je peux vous aider dans la conception et l’amélioration de votre projet.
         Je m’occupe du
         <span className={`text-${currentColor}-400`}> développement</span> et/ou
         du

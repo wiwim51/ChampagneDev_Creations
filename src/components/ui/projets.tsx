@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "Lomie",
     description:
-      "Une application de création de capsule temporelle digitale. (En cours de développement)",
-    link: "https://google.com",
+      "Votre boite à souvenir numérique collaborative, pour capturer, partager et conserver tous vos moments de vie ! (En cours de développement)",
+    link: "https://www.instagram.com/lomie_officiel/",
   },
 ];

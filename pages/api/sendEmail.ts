@@ -7,8 +7,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { firstname, lastname, email, subject, message } = req.body;
   const { data, error } = await resend.emails.send({
-    from: process.env.MY_EMAIL || "",
-    to: [email],
+    from: email,
+    to: process.env.MY_EMAIL || "",
     subject: subject,
     react: EmailTemplate({
       firstName: firstname,

@@ -42,7 +42,7 @@ export default async function handler(
         firstName: firstname,
         lastName: lastname,
         email,
-        subject: `Merci pour votre message ${lastname} ${firstname}`,
+        subject: `Merci pour votre message ${firstname} ${lastname}`,
         message:
           "Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.",
       }),

@@ -19,6 +19,9 @@ export default async function handler(
     return res.status(400).json({ error: "Tous les champs sont requis." });
   }
 
+  console.log("→ from:", process.env.SENDER_EMAIL);
+  console.log("→ to:", process.env.MY_EMAIL);
+
   try {
     const data = await resend.emails.send({
       from: process.env.SENDER_EMAIL!, // ex. "No-Reply <no-reply@votredomaine.com>"

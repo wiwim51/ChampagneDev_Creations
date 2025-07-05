@@ -21,10 +21,10 @@ import { Button } from "./ui/button";
 import { TitleColor } from "./ui/TitleColor";
 
 const formSchema = z.object({
-  nom: z.string().min(2, {
+  firstname: z.string().min(2, {
     message: "Votre Nom doit contenir au moins 2 caractères.",
   }),
-  prenom: z.string().min(2, {
+  lastname: z.string().min(2, {
     message: "Votre Prénom doit contenir au moins 2 caractères.",
   }),
   email: z.string().email({
@@ -40,8 +40,8 @@ const formSchema = z.object({
 });
 
 type ContactFormData = {
-  nom: string;
-  prenom: string;
+  firstname: string;
+  lastname: string;
   email: string;
   subject: string;
   message: string;
@@ -51,8 +51,8 @@ export default function Contact() {
   const form = useForm<ContactFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      nom: "",
-      prenom: "",
+      firstname: "",
+      lastname: "",
       email: "",
       subject: "",
       message: "",
@@ -75,8 +75,8 @@ export default function Contact() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          nom: data.nom,
-          prenom: data.prenom,
+          nom: data.firstname,
+          prenom: data.lastname,
           subject: data.subject,
           email: data.email,
           message: data.message,
@@ -145,7 +145,7 @@ export default function Contact() {
           >
             <FormField
               control={form.control}
-              name="nom"
+              name="firstname"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
@@ -157,7 +157,7 @@ export default function Contact() {
             />
             <FormField
               control={form.control}
-              name="prenom"
+              name="lastname"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>

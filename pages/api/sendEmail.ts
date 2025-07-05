@@ -34,7 +34,23 @@ export default async function handler(
       }),
     });
 
-    return res.status(200).json({ data });
+    const reception = await resend.emails.send({
+      from: process.env.SENDER_EMAIL!,
+      to: [email], // envoyer une copie à l'utilisateur
+      subject: `Merci pour votre message ${lastname} ${firstname}`,
+      react: EmailTemplate({
+        firstName: firstname,
+        lastName: lastname,
+        email,
+        subject: `Merci pour votre message ${lastname} ${firstname}`,
+        message:
+          "Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.",
+      }),
+    });
+
+    await Promise.all([data, reception]);
+
+    return res.status(200).json({ success: "success" });
   } catch (err: any) {
     console.error("Erreur Resend ▶", err);
     return res.status(500).json({ error: err.message || "Échec de l’envoi." });

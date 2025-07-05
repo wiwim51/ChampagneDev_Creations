@@ -38,7 +38,7 @@ export const ResEmailTemplate: React.FC<Readonly<ResEmailTemplateProps>> = ({
 }) => (
   <div>
     <h1>
-      Merci pour votre message {firstName} {lastName}
+      Merci pour votre message {lastName} {firstName}
     </h1>
     <p>{message}</p>
   </div>

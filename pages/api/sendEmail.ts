@@ -1,4 +1,4 @@
-import { EmailTemplate } from "@/components/email-template";
+import { EmailTemplate, ResEmailTemplate } from "@/components/email-template";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 
@@ -38,11 +38,9 @@ export default async function handler(
       from: process.env.SENDER_EMAIL!,
       to: [email], // envoyer une copie à l'utilisateur
       subject: `Merci pour votre message ${lastname} ${firstname}`,
-      react: EmailTemplate({
+      react: ResEmailTemplate({
         firstName: firstname,
         lastName: lastname,
-        email,
-        subject: `Merci pour votre message ${firstname} ${lastname}`,
         message:
           "Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.",
       }),

@@ -8,6 +8,12 @@ interface EmailTemplateProps {
   email: string;
 }
 
+interface ResEmailTemplateProps {
+  lastName: string;
+  firstName: string;
+  message: string;
+}
+
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   lastName,
   firstName,
@@ -21,6 +27,19 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </h1>
     <p>{email}</p>
     <h2>{subject}</h2>
+    <p>{message}</p>
+  </div>
+);
+
+export const ResEmailTemplate: React.FC<Readonly<ResEmailTemplateProps>> = ({
+  lastName,
+  firstName,
+  message,
+}) => (
+  <div>
+    <h1>
+      Merci pour votre message {firstName} {lastName}
+    </h1>
     <p>{message}</p>
   </div>
 );
